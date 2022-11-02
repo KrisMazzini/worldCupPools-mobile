@@ -12,7 +12,6 @@ export function Button({ title, type = 'PRIMARY', ...rest }: Props) {
             h={14}
             rounded="sm"
             fontSize="md"
-            textTransform="uppercase"
             bg={type === 'SECONDARY' ? 'red.500' : 'yellow.500'}
             _pressed={{
                 bg: type === 'SECONDARY' ? 'red.600' : 'yellow.600'
@@ -28,6 +27,7 @@ export function Button({ title, type = 'PRIMARY', ...rest }: Props) {
             <Text
                 fontSize="sm"
                 fontFamily="heading"
+                textTransform="uppercase"
                 color={type === 'SECONDARY' ? 'white' : 'black'}
             >
                 {title}
